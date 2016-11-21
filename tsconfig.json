@@ -1,19 +1,32 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "moduleResolution": "node",
         "target": "es5",
-        "noImplicitAny": false,
+        "module": "es2015",
+        "moduleResolution": "node",
+        "declaration": false,
+        "removeComments": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "inlineSourceMap": true,
-        "declaration": false,
+        "sourceMap": true,
+        "pretty": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "noImplicitAny": false,
+        "noImplicitReturns": false,
+        "noImplicitUseStrict": false,
+        "noFallthroughCasesInSwitch": true,
+        "typeRoots": [ "./node_modules/@types" ],
         "outDir": ".",
-        "rootDir": "src/ng2-bs4-modal"
+        "rootDir": "src/ng2-bs4-modal",
+        "types": [
+            "core-js",
+            "node"
+        ]
     },
+    "files": [
+        "src/ng2-bs4-modal/ng2-bs4-modal.ts"
+    ],
     "exclude": [
-        "typings/main.d.ts",
-        "typings/main",
         "node_modules",
         "demo",
         "bundles",
